@@ -1,0 +1,186 @@
+{
+	"id": "06ee8ad8-3682-42c2-ad12-bea0bff7b74a",
+	"name": "Kasir Aja",
+	"timestamp": "2023-06-05T10:24:16.770Z",
+	"collection_id": "21535671-ef159118-3fbf-4d89-be30-ec6396e272a0",
+	"folder_id": "21535671-158ebd81-51e7-4b20-a353-f1c7efab558f",
+	"environment_id": "21535671-4c80ab9b-c19e-4e05-a5b9-e5aed92802ea",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-05T10:24:15.100Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7712bf86-e1e8-4c3f-8752-211dfa17fce6",
+			"name": "Login",
+			"url": "https://kasir-api.belajarqa.com/authentications",
+			"time": 468,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				468
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b0e2d5ff-554c-4710-8db6-ccb32c66de79",
+			"name": "Category Details",
+			"url": "https://kasir-api.belajarqa.com/categories?page=1&q=makanan",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "82ab4d2c-b549-40b3-b0f6-19d1cb9aa2b8",
+			"name": "Add Category",
+			"url": "https://kasir-api.belajarqa.com/categories",
+			"time": 27,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Add Category success": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Add Category success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Add Category success": true
+				}
+			]
+		},
+		{
+			"id": "8b39050e-c3ed-4ad5-8b1b-d13b66061002",
+			"name": "Update Category",
+			"url": "https://kasir-api.belajarqa.com/categories/903d6725-143a-453b-967f-cfe7f8b39f81",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Update Category success": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Update Category success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Update Category success": true
+				}
+			]
+		},
+		{
+			"id": "4675e509-e9b0-485f-a07c-5a27f342ef5d",
+			"name": "Delete Category",
+			"url": "https://kasir-api.belajarqa.com/categories/811f547e-a24e-4f94-bfe1-b7ed7d11c03f",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Delete Category success": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Delete Category success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Delete Category success": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 586,
+	"collection": {
+		"requests": [
+			{
+				"id": "7712bf86-e1e8-4c3f-8752-211dfa17fce6",
+				"method": "POST"
+			},
+			{
+				"id": "b0e2d5ff-554c-4710-8db6-ccb32c66de79",
+				"method": "GET"
+			},
+			{
+				"id": "82ab4d2c-b549-40b3-b0f6-19d1cb9aa2b8",
+				"method": "POST"
+			},
+			{
+				"id": "8b39050e-c3ed-4ad5-8b1b-d13b66061002",
+				"method": "PUT"
+			},
+			{
+				"id": "4675e509-e9b0-485f-a07c-5a27f342ef5d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
